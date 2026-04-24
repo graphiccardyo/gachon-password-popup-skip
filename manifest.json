@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "가천 SSO 비밀번호 알림 자동 넘김",
+  "description": "가천대학교 SSO 비밀번호 변경 권장 팝업에서 '다음에 변경' 버튼을 자동으로 누릅니다.",
+  "version": "1.0.0",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://sso.gachon.ac.kr/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
